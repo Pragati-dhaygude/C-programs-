@@ -1,0 +1,49 @@
+
+#include <stdio.h>
+#include <conio.h>
+int main()
+{
+int i=1,choice;
+int sum=0,ave,square;
+clrscr();
+printf("****Menu**** \n");
+printf("1.Addition of 10 numbers using for loop:\n");
+printf("2.Avarage of first 10 numbers using while loop:\n");
+printf("3.square of first 10 numbers using do while loop:\n");
+printf("Enter your choice:\n");
+scanf("%d",&choice);
+switch(choice)
+{
+case 1:
+printf("Addition of 10 numbers using for loop:\n");
+for(i=1;i<=10;i++)
+{
+    sum=sum+i;
+printf("%d \n",sum);
+}
+break;
+case 2:
+printf("Avarage of first 10 numbers using while loop:\n",i);
+while(i<=10)
+{
+    ave=sum/10;
+printf("%d \n",ave);
+i++;
+}
+break;
+case 3:
+printf("square of first 10 numbers using do while loop:\n");
+do{
+    square=i*i;
+printf("%d \n",i*i);
+i++;
+}while(i<=10);
+break;
+default:{
+    printf("not valid\n");
+}
+
+}
+getch();
+return 0;
+}
