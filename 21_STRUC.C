@@ -8,7 +8,7 @@ int main() {
     union product p[10];
     int n,i,choise[10];
     clrscr();
-    printf("Enter number of products:\n");
+    printf("Enter no. of product:\n");
     scanf("%d",&n);
     for(i=0;i<n;i++){
         printf("product=%d\n",i+1);
